@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile first | Desktop second</title>
+
+    <style>
+        * {
+            /* margin: 0;
+            padding: 0; */
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 800px;
+            background-color: black;
+            margin: 40px;
+            padding: 10px;
+        }
+        .main-container {
+            display: flex;
+            background-color: white;
+            /* margin: 15px; */
+            padding: 5px;
+            flex-direction: row;
+
+        }
+        @media screen and (max-width: 600px) {
+            .main-container {
+                /* display: block; */
+                flex-direction: column;
+            }
+        }
+
+        .main-nav {
+            background-color: darkgray;
+            padding: 15px;
+            margin: 10px;
+            
+            
+        }
+       
+        .main-nav ul {
+            /* display: flex; */
+            list-style-type: none;
+            padding: 5px 25px 5px 5px ;
+           
+        }
+        .main-nav a {
+            text-decoration: none;
+            
+        }
+
+        .main-container div {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        
+        <nav class="main-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        </nav>
+        
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate laudantium ex vero autem aliquam, earum ab provident non deserunt quia! Tempora, veritatis deleniti. At ullam debitis consequuntur, expedita fuga dicta modi eum minima quam maxime saepe non amet qui veritatis.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate laudantium ex vero autem aliquam, earum ab provident non deserunt quia! Tempora, veritatis deleniti. At ullam debitis consequuntur, expedita fuga dicta modi eum minima quam maxime saepe non amet qui veritatis.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate laudantium ex vero autem aliquam, earum ab provident non deserunt quia! Tempora, veritatis deleniti. At ullam debitis consequuntur, expedita fuga dicta modi eum minima quam maxime saepe non amet qui veritatis.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate laudantium ex vero autem aliquam, earum ab provident non deserunt quia! Tempora, veritatis deleniti. At ullam debitis consequuntur, expedita fuga dicta modi eum minima quam maxime saepe non amet qui veritatis.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
